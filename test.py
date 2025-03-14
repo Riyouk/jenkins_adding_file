@@ -2,4 +2,4 @@
 from add import addition
 
 def test_add():
-    assert addition() == 12
+    assert addition(10,2) == 12
