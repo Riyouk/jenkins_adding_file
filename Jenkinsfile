@@ -21,9 +21,9 @@ pipeline {
         stage('run test'){
             steps {
                 bat '''
-                call venv\\Scripts\\activate
-                pytest test.py
-                '''
+                    call venv\\Scripts\\activate 
+                    pytest test.py
+                    '''
             }
         }
         stage('deploy') {
