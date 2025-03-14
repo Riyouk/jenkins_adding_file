@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage('checkout code'){
             steps {
-                git credentialsID: 'pathelloworld' , url : "https://github.com/Riyouk/jenkins_adding_file.git" , branch : 'main'
+                git credentialsId: 'pathelloworld' , url : "https://github.com/Riyouk/jenkins_adding_file.git" , branch : 'main'
             }
         }
 
