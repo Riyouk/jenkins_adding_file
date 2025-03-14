@@ -7,12 +7,11 @@ pipeline {
                 git credentialsId: 'pathelloworld' , url : "https://github.com/Riyouk/jenkins_adding_file.git" , branch : 'main'
             }
         }
-
-        stage('install Dependencies'){
-            steps {
-                bat '''
-                    python -m  venv venv
-                    call vevn\\Scripts\\activate
+        stage('install Dependencies') {
+            steps{
+                bat ''' 
+                    python -m venv venv
+                    call venv\\Scripts\\activate
                     pip install --upgrade pip
                     pip install -r requirement.txt
                     '''
